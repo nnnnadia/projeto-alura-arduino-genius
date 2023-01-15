@@ -1,6 +1,9 @@
+int redLed = 2;
+
 void setup() {
   // put your setup code here, to run once:
-  pinMode(2, OUTPUT);
+  pinMode(redLed, OUTPUT);
+  digitalWrite(redLed, 1);
 }
 
 void loop() {
