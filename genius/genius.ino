@@ -12,12 +12,12 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   Serial.println(RED_LED);
-  blinkLed();
+  blinkLed(RED_LED);
 }
 
-void blinkLed() {
-  digitalWrite(RED_LED, HIGH);
+void blinkLed(int ledPort) {
+  digitalWrite(ledPort, HIGH);
   delay(ONE_SECOND);
-  digitalWrite(RED_LED, LOW);
+  digitalWrite(ledPort, LOW);
   delay(HALF_SECOND);
 }
